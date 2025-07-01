@@ -1,0 +1,111 @@
+/* src/components/Dashboard.module.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardContainer {
+  width: 95vw;
+  height: 95vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow */
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: #4f79a9; /* Cool blue color for header */
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.btnLogout {
+  background-color: #dc3545;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btnLogout:hover {
+  background-color: #c82333;
+}
+
+.searchFilterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterSelect {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.bottomPanel {
+  flex: 1;
+  display: flex;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.leftPanel {
+  width: 300px;
+  height: 470px;
+  border-radius: 10ps;  padding: 20px;
+  /* Light teal color for the left panel */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+  overflow: hidden; /* Remove scrolling */
+}
+
+.rightPanel {
+  flex: 1;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+  overflow-y: auto; /* Enable scrolling */
+  background-color: #eef5db; /* Soft lime color for the right panel */
+  border-radius: 0 0 10px 0;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bottomPanel {
+    flex-direction: column;
+  }
+
+  .leftPanel, .rightPanel {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+/* src/components/LoginPage.module.css */
+.wrapper {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 0 20px; /* Add some padding for small screens */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Corrected the font-family property */
+  margin-bottom: 20px;
+}
+
+.loginContainer {
+  width: 100%;
+  max-width: 400px; /* Restrict the max width */
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.loginBox {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: auto; /* Adjust to fit content */
+  padding: 10px 20px; /* Adjust button size */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  align-self: flex-end; /* Align to the right */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
